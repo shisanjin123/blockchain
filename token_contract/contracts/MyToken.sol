@@ -3,8 +3,8 @@ pragma solidity ^0.8.0;
 // ERC-20代币开发
 // USDC  Chainlink BAT ....
 contract MyToken {
-    string public name = unicode"牛币";
-    string public symbol = "NB";
+    string public name = unicode"金狗币";
+    string public symbol = "GoldDogB";
     uint256 public totalSupply = 1000000000000000000000000;
 
     // 余额
@@ -39,6 +39,8 @@ contract MyToken {
             bool success
         )
     {
+        // 转账前增加对接收地址的检查，确保不是零地址（0x0），因为向零地址转账会永久锁定这部分代币
+        require(_to != address(0), "Transfer to the zero address");
         // 断言如果账户余额足够 则继续  否则终止该函数的运行
         require(balanceOf[msg.sender] >= _value);
         // 根据发送代币数量扣除发送者地址的代币数量
@@ -72,6 +74,8 @@ contract MyToken {
         address _to,
         uint256 _value
     ) public returns (bool success) {
+        // 转账前增加对接收地址的检查，确保不是零地址（0x0），因为向零地址转账会永久锁定这部分代币
+        require(_to != address(0), "Transfer to the zero address");
         // 授权钱包的地址余额必须要够
         require(_value <= balanceOf[_from], "Insufficient balance");
         // 被授权钱包的地址的授权额度要够
