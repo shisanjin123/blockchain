@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>代币的转账和授权</title>
+  </head>
+  <body>
+    <h1>代币的转账和授权</h1>
+    <p>
+      账户:
+      <select id="accountSelect"></select>
+    </p>
+    <p>ETH余额: <span id="ethBalance"></span></p>
+    <p>代币余额: <span id="tokenBalance"></span></p>
+
+    <input type="text" id="recipientAddress" placeholder="收款人地址" />
+    <input type="number" id="transferAmount" placeholder="转账金额" />
+    <button id="transferBtn">转账</button>
+    <br /><br />
+
+    <input type="text" id="spenderAddress" placeholder="付款人地址" />
+    <input type="number" id="approvalAmount" placeholder="授权金额" />
+    <button id="approveBtn">授权</button>
+    <br />
+
+    <p>查询授权额度:</p>
+    <input type="text" id="ownerAddress" placeholder="所有者地址" />
+    <input type="text" id="spenderQueryAddress" placeholder="授权查询地址" />
+    <button id="queryAllowanceBtn">查询授权额度</button>
+    <p>授权额度结果: <span id="allowanceResult"></span></p>
+    <br />
+
+    <input type="text" id="checkAddress" placeholder="查询余额的地址" />
+    <button id="checkBalanceBtn">查询代币余额</button>
+    <p>查询结果: <span id="checkResult"></span></p>
+    <br />
+
+    <p>代理转账:</p>
+    <input type="text" id="fromAddress" placeholder="委托人地址" />
+    <input type="text" id="toAddress" placeholder="接收人地址" />
+    <input type="number" id="delegatedTransferAmount" placeholder="转账金额" />
+    <button id="delegatedTransferBtn">执行代理转账</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
