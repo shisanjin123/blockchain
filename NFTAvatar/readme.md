@@ -1,3 +1,4 @@
+```
 1: 安装VSCODE
 2: VSCODE安装插件 solidity
 3: 安装Nodejs  v16.20.2
@@ -53,3 +54,4 @@ module.exports = function (deployer) {
 20:安装live server插件
 21:编写NFT的HTML测试代码
 22:使用live server测试HTML智能合约
+```
