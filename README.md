@@ -28,7 +28,7 @@
 1. 拉取项目（或手动下载）
 
    ```bash
-   git clone --depth 1 https://github.com/togettoyou/fabric-realty.git
+   git clone --depth 1 https://github.com/shi_sanjin/blockchain/fabric-realty.git
    ```
 
 2. 设置脚本权限
