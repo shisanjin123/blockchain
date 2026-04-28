@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 基于 Hyperledger Fabric 的房地产交易系统
 
 本项目是一个基于 Hyperledger Fabric 的房地产交易系统，实现了房产登记和交易的业务流程。
@@ -203,3 +204,6 @@ API 接口设计：
 - Ant Design Vue v3.2.20
     - UI 组件库
     - 提供完整的设计体系
+=======
+# blockchain
+>>>>>>> 486fca998c51fce3b232018116bc6536e3c630c5
